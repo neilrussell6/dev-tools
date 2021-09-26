@@ -1,0 +1,32 @@
+{
+  "name": "root",
+  "description": "neilrussell6 : dev tools",
+  "keywords": [],
+  "version": "0.0.0",
+  "author": "Neil Russell <neilrussell6@gmail.com>",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neilrussell6/dev-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/neilrussell6/dev-tools/issues"
+  },
+  "homepage": "https://github.com/neilrussell6/dev-tools#readme",
+  "scripts": {
+    "ls": "lerna ls",
+    "bootstrap": "lerna bootstrap",
+    "publish": "lerna publish",
+    "publish:patch": "lerna publish patch",
+    "publish:minor": "lerna publish minor",
+    "publish:major": "lerna publish major",
+    "_init:all": "lerna run init --stream --concurrency=1 -- --colors",
+    "_init:envs": "cp -n .env.tpl .env || true",
+    "init": "npm run bootstrap",
+    "help": "package-json-help.js"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "package-json-help": "0.0.11"
+  }
+}

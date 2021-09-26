@@ -1,0 +1,10 @@
+{
+  "ls": "list all packages",
+  "bootstrap": "bootstrap all packages, installing all their dependencies and linking any cross-dependencies",
+  "publish": "publish (auto semantic versioning based on conventional commit history)",
+  "publish:patch": "publish a patch release",
+  "publish:minor": "publish a minor release",
+  "publish:major": "publish a major release (breaking change)",
+  "ci:validate": "validate CircleCI config",
+  "init": "initialize project (including all packages)"
+}
